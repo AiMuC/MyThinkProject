@@ -2,7 +2,7 @@
 /*
  * @Author: AiMuC
  * @Date: 2021-08-23 12:04:06
- * @LastEditTime: 2021-08-23 12:04:07
+ * @LastEditTime: 2021-08-23 12:28:31
  * @LastEditors: AiMuC
  * @Description: 
  * @FilePath: /html/app/middleware.php
@@ -19,5 +19,5 @@ return [
     // 跨域请求支持
     \think\middleware\AllowCrossDomain::class,
     //限制接口请求频率
-    // \think\middleware\Throttle::class,
+    \think\middleware\Throttle::class,
 ];
