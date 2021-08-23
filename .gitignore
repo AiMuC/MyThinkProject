@@ -1,0 +1,11 @@
+/app
+/composer.json
+/composer.lock
+/config
+/extend
+/public
+/route
+/runtime
+/think
+/vendor
+/view
