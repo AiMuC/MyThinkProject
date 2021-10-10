@@ -1,18 +1,20 @@
 <?php
 /*
- * @Author: AiMuC
- * @Date: 2021-08-23 05:01:45
- * @LastEditTime: 2021-08-23 09:20:06
+ * @Date: 2021-10-10 07:44:22
  * @LastEditors: AiMuC
- * @Description: Redis操作类门面
- * @FilePath: /html/app/facade/RedisLock.php
- * By:AiMuC
+ * @LastEditTime: 2021-10-10 07:52:23
+ * @FilePath: /data/MyThinkProject/app/facade/RedisLock.php
  */
 
 namespace app\facade;
 
 use think\Facade;
 
+/**
+ * @description: Redis锁
+ * @method static bool Redis_Lock($scene, $expire = 5, $retry = 5, $sleep = 1000) Redis操作上锁
+ * @method static bool Redis_unLock($scene) redis操作解锁
+ */
 class RedisLock extends Facade
 {
     protected static function getFacadeClass()

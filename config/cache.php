@@ -1,4 +1,10 @@
 <?php
+/*
+ * @Date: 2021-10-10 07:44:22
+ * @LastEditors: AiMuC
+ * @LastEditTime: 2021-10-10 07:46:27
+ * @FilePath: /data/MyThinkProject/config/cache.php
+ */
 
 // +----------------------------------------------------------------------
 // | 缓存设置
@@ -27,7 +33,7 @@ return [
         // 更多的缓存连接
         'redis' => [
             'type' => 'redis',
-            'host' => '127.0.0.1'
+            'host' => 'host.docker.internal'
         ]
     ],
 ];

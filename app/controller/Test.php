@@ -2,20 +2,25 @@
 /*
  * @Author: AiMuC
  * @Date: 2021-08-23 05:07:33
- * @LastEditTime: 2021-08-23 08:49:23
+ * @LastEditTime: 2021-10-10 07:48:26
  * @LastEditors: AiMuC
  * @Description: 
- * @FilePath: /html/app/controller/Test.php
+ * @FilePath: /data/MyThinkProject/app/controller/Test.php
  * By:AiMuC
  */
 
 namespace app\controller;
 
 use app\facade\RedisLock;
+use app\facade\Jump;
 use think\facade\Cache;
 
 class Test
 {
+    public function jump()
+    {
+        return Jump::success('aaa');
+    }
     public function index()
     {
         return 1;
